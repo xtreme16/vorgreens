@@ -1,0 +1,189 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #676767;
+    /* background-color: #95D5B2; */
+    min-height: 100vh;
+}
+
+/* list-menu-start */
+#list-menu{
+    /* margin-top: 100vh ; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150vh;
+    background-color: #FFFFFF;
+    padding: 0 5rem;
+}
+.list-left img{
+    
+    width: 320px;
+    margin: 14px 0;
+}
+
+.tittle-list{
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.list-desc{
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+.list-middle{
+    padding: 0 3rem;
+}
+
+.list-middle img{
+    width: 320px;
+    margin: 1.30rem 0;
+}
+
+.list-right img{
+    /* width: 18rem; */
+    height: 480px;
+}
+/* list-menu-end */
+
+/* menu-start */
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 180vh;
+    padding: 0 5rem; 
+}
+.tittle{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.menu-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    font-size: 1.5rem;
+}
+
+
+.active{
+    font-weight: bold;
+    color: #40916C;
+}
+.line{
+    width: 650px;
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CACACA;
+    z-index: -1;
+}
+
+.cards-of-menu{
+    width: 100%;   
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.cards-active{
+    display: flex;
+}
+.card-menu{
+    margin: 1rem;
+    position: relative;
+}
+.menu-pict{
+    height: 18rem;
+    width: 18rem;
+}
+.hoverit{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+
+.card-menu:hover .hoverit{
+    opacity: 1;
+}
+
+.menu-desc{
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* menu-end */
+
+  /* Responsive */
+/* tablet */
+@media screen and (max-width: 768px) {
+    #list-menu{
+        flex-direction: column;
+        padding: 3rem;
+    }
+    #menu{
+
+    padding: 0 2rem; 
+}
+    .line{
+        width: 600px;
+        height: 6px;
+        
+    }
+
+    .menu-pict{
+    height: 10rem;
+    width: 10rem;
+}
+
+.menu-desc{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.list-middle{
+    padding: 0;
+}
+
+.listing{
+    width: 80%;
+}
+
+.listing img{
+    margin: 3rem 0;
+
+}
+}

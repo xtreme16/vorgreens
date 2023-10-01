@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #595959;
+    background-color: #40916C;
+    min-height: 450vh;
+}
+
+
+#store{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#store img{
+    height : 30rem;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* history-start */
+#history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.tittle{
+    font-size: 4.5rem; 
+    color: #FFFFFF;
+    margin-bottom: 4rem;
+}
+
+.logo{
+    height: 5rem;
+}
+
+.card{
+    background-color: #95D5B2;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding: 5rem 6rem;
+    border-radius: 7px;
+}
+
+.come-visit{
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.wrapper{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 100%;
+    margin:1rem 0;
+}
+.wrapper img{
+    height: 4rem;
+}
+.content-findus{
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 20px 10px ;
+    transition: all;
+    transition-duration: 00ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* history-end */
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+.direct-contact{
+    font-size: 3rem; 
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+.button{
+    margin-top: 1.5rem;
+    background-color: #95D5B2;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.75rem  2rem;
+    border-radius: 6px;
+    margin-bottom: 7rem;
+}
+
+
+  /* Responsive */
+/* tablet */
+@media screen and (max-width: 768px) {
+    #store img{
+        height: 20rem;
+    }
+    iframe{
+        border: 0;
+        height: 400px;
+        width: 500px;
+    }
+    .card{
+    
+        padding: 3rem 2rem;
+        border-radius: 7px;
+    }
+    .wrapper img{
+        height: 2rem;
+    }
+
+    .content-findus {
+        font-size: 1.25rem;
+    }
+}

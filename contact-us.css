@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #676767;
+    /* background-color: #95D5B2; */
+    min-height: 180vh;
+    color: #FFFFFF;
+}
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.tittle-contact{
+    font-size: 3rem;
+    color: #676767;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+#form .contact-wrap{
+    background-color: #95D5B2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 40rem;
+    width: 80%;
+    border-radius: 2.5rem;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.input-wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 1.15rem 0;
+    font-size: 1.35rem;
+}
+
+.gander{
+    display: flex;
+}
+.input-wrap-gander{
+    padding: 0 1rem ;
+}
+
+#name{
+    height: 1.5rem;
+    width: 25rem;
+    padding-left: 0.5rem;
+    border: none;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+#email{
+    height: 1.5rem;
+    width: 25rem;
+    padding-left: 0.5rem;
+    border: none;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+input{
+    color: #FFFFFF;
+    font-size: 1.15rem;
+}
+
+textarea{
+    padding: 0.5rem;
+    border: none;
+    /* border-radius: 6px; */
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border-bottom: 2px solid #FFFFFF;
+    font-size: 1.15rem;
+}
+
+.tittle{
+    font-size: 1.35rem;
+}
+
+.button-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1.35rem;
+}
+.button-wrap button{
+    padding: 0.75rem 0.25rem ;
+    width: 50%;
+    background-color: #40916C;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 1.15rem;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.gander-radio{
+    display: flex;
+}
+
+.circle-outside{
+    margin-right: 1rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    display: inline-block;
+    border-radius: 2rem;
+    position: relative;
+}
+.circle-inside{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    border-radius: 2rem;
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+}
+input[type="radio"]{
+  opacity: 0;
+}
+input[type="radio"]:checked + label span{
+    background-color: #FFFFFF; 
+    box-shadow: 0px 0px 0px 0px white inset;
+  }
+
+    /* Responsive */
+/* tablet */
+@media screen and (max-width: 768px) {
+    .contact-wrap{
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+}
